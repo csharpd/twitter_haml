@@ -1,9 +1,10 @@
 Twitter_haml
 ================
 
+![](public/images/twittersassscreenshot.png)
 ## Objectives
 
-Re-create the twitter front end using SCSS & HAML
+I redid my twitter front end project, this time using SCSS & HAML
 
 ## Technologies
 * SCSS
@@ -21,3 +22,5 @@ rackup
 
 Open your browser and go to [localhost:9292](http://localhost:9292)
 
+## Improvments
++ Make it responsive
