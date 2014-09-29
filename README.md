@@ -3,7 +3,7 @@ Twitter_haml
 
 ![](public/images/twittersassscreenshot.png)
 ## Deployed
-View the app at [http://twitterhaml.herokuapp.com/]
+View the app [here](http://twitterhaml.herokuapp.com/)
 
 ## Objectives
 
