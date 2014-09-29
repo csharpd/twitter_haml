@@ -2,6 +2,9 @@ Twitter_haml
 ================
 
 ![](public/images/twittersassscreenshot.png)
+## Deployed
+View the app at [http://twitterhaml.herokuapp.com/]
+
 ## Objectives
 
 I redid my twitter front end project, this time using SCSS & HAML
