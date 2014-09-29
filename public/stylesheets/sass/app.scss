@@ -10,6 +10,30 @@
   width: 80.708333333333%;
 }
 
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val + 1;
+  -moz-box-ordinal-group: $val + 1;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
 body {
   font-family: "Gotham Narrow SSm";
   background-color: #C0DEED;
@@ -39,6 +63,11 @@ header {
         text-decoration: none;
         padding-right: 20px;
         padding-bottom: 6px;
+      }
+      a:hover {
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
+        border-bottom-color: #0084B4;
       }
       #logo {
       height: 20px;
@@ -79,11 +108,12 @@ header {
 
 .main {
   @include centered();
+  @include flexbox();
   padding-top: .6em;
 
   aside {
-    float: left;
-    width: 290px;
+    @include order(1);
+    @include flex(1 1 33%);
     margin-top: 3.3em;
     border-radius: 4px;
 
@@ -108,7 +138,7 @@ header {
         margin-left: 8px;
         border:3px solid #fff;
       }
-      header {
+      .header {
         margin-top: -40px;
         margin-left: 91px;
         width: 185px;
@@ -161,7 +191,7 @@ header {
     #tweetbox{
       border: 1px solid;
       padding: 12px;
-      width: 266px ;
+      width: 92% ;
       margin-left: -1px;
       margin-bottom: -1px;
       background-color: #E5F2F7 !important;
@@ -172,7 +202,7 @@ header {
 
       .tweet {
         height: 30px;
-        width: 250px;
+        width: 99%;
         font-size: 14px;
         border:1px solid #BFE0EC;
         border-radius: 2px;
@@ -181,7 +211,8 @@ header {
     }
   }
   .feed {
-    float:right;
+    @include order(2);
+    @include flex(2 1 66%);
     margin-top: 3.3em;
     font-family: 'Gotham Narrow SSm';
     width: 575px;
@@ -246,13 +277,12 @@ header {
           display: inline-block;
         }
         .handle {
+          float: left;
           border: none;
           width: 220px;
-          position: absolute;
           display: inline-block;
           margin-top: 11px;
-          margin-left: 10px;
-          z-index: 0;
+          margin-left: 8px;
           font-size: 12px;
         }
         .content {
@@ -288,7 +318,7 @@ header {
   height:167px;
   border-radius: 6px;
   padding-bottom: 10px;
-  width: 290px;
+  width: 100%;
 
   .suggestionsheader {
     margin-left: 10px;
@@ -379,7 +409,7 @@ header {
   height:160px;
   border-radius: 6px;
   padding-bottom: 10px;
-  width: 290px;
+  width: 100%;
 
   .trendingheader {
     margin-left: 10px;
@@ -413,6 +443,7 @@ header {
   text-decoration: none;
   margin-left: 10px;
 }
+
 
 
 
