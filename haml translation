@@ -1,0 +1,116 @@
+!!!
+%html
+  %head
+    %title Makin'Twitter
+    %link{:href => "/images/favicon.ico", :rel => "icon", :type => "image/ico"}/
+    %link{:href => "css/reset.css", :rel => "stylesheet"}/
+    %link{:href => "css/app.css.scss", :rel => "stylesheet"}/
+  %body
+    %header
+      %section.wrap
+        %nav#left-nav
+          %a{:href => "/"}
+            %img{:alt => "", :src => "/images/home.png"}>/
+            Home
+          %a{:href => "/"}
+            %img{:alt => "", :src => "/images/notifications.png"}/
+            Notifications
+          %a{:href => "/"}
+            %img{:alt => "", :src => "/images/discover.png"}>/
+            Discover
+          %a{:href => "/"}
+            %img{:alt => "", :src => "/images/me.png"}/
+            Me
+          %img#logo{:alt => "", :src => "/images/logo.png"}/
+        %nav#center-nav
+          %input.search{:placeholder => "Search Twitter", :type => "text"}/
+        %nav#right-nav
+          %a{:href => "/"}
+            %img{:alt => "", :src => "/images/settings.png"}/
+          %a{:href => "/"}
+            %img{:alt => "", :src => "/images/settings.png"}/
+          %a{:href => "/"}
+            %img#new-tweet{:alt => "", :src => "/images/new_tweet.png"}/
+    %section.wrap
+      %aside#sidebar
+        %section.profile
+          %section.profile.top
+          %section.profile.picture
+          %h3.profile.name Chloe Donegan
+          %p.profile.handle @ThisIsCsharpd
+          %ul.profile.stats
+            %li
+              %section.profile.stats.heading TWEETS
+              %section.profile.stats.value 115
+            %li
+              %section.profile.stats.heading FOLLOWING
+              %section.profile.stats.value 224
+            %li
+              %section.profile.stats.heading FOLLOWERS
+              %section.profile.stats.value 138
+          %section.profile.tweet
+            %input{:placeholder => "Compose a new Tweet...", :type => "text"}/
+        %section.suggestions
+          %h3.suggestion.title Who to follow
+          %section.links
+            %a{:href => "#"} Refresh
+            %a{:href => "#"} View All
+          %article.user
+            %img{:alt => "", :src => "/images/zen.png"}/
+            %h2.user.title daily zen
+            %p.handle @dailyzen
+            %button.follow-button
+          %article.user
+            %img{:alt => "", :src => "/images/buddism.png"}/
+            %h2.user.title Buddhist Geeks
+            %p.handle @BuddhistGeeks
+            %button.follow-button
+        %section.suggestions.trending
+          %h3.suggestions.title
+            Trends
+            %a{:href => "#"} Change
+          %a.hashtags{:href => "#"} #Bikram
+          %a.hashtags{:href => "#"} #Yoga
+          %a.hashtags{:href => "#"} #Adventure
+          %a.hashtags{:href => "#"} #GreatOutdoors
+          %a.hashtags{:href => "#"} #Design
+      %section.feed
+        %section.feed.title
+          %h3 Tweets
+        %section.feed.container
+          %article.feed.tweet
+            %img{:alt => "", :src => "/images/matt.jpeg"}/
+            %h3 Matt Clifford
+            %p.feed.handle ‏@matthewclifford  3 hrs
+            %p.feed.content Interesting that the ability to source rare (and not that rare) films to rent is worse than it was a few years ago
+          %article.feed.tweet
+            %img{:alt => "", :src => "/images/matt.jpeg"}/
+            %h3 Matt Clifford
+            %p.feed.handle ‏@matthewclifford  3 hrs
+            %p.feed.content Interesting that the ability to source rare (and not that rare) films to rent is worse than it was a few years ago
+          %article.feed.tweet
+            %img{:alt => "", :src => "/images/matt.jpeg"}/
+            %h3 Matt Clifford
+            %p.feed.handle ‏@matthewclifford  3 hrs
+            %p.feed.content Interesting that the ability to source rare (and not that rare) films to rent is worse than it was a few years ago
+          %article.feed.tweet
+            %img{:alt => "", :src => "/images/matt.jpeg"}/
+            %h3 Matt Clifford
+            %p.feed.handle ‏@matthewclifford  3 hrs
+            %p.feed.content Interesting that the ability to source rare (and not that rare) films to rent is worse than it was a few years ago
+          %section.feed.tweet.end
+
+
+
+            /   %img#logo{:alt => "", :src => "/images/logo.png"}/
+            / / %li
+            / /   %input.search{:placeholder => "Search Twitter", :type => "text"}/
+            / %li
+            /   %a{:href => "/"}
+            /   %img{:alt => "", :src => "/images/settings.png"}/
+            / %li
+            /   %a{:href => "/"}
+            /   %img{:alt => "", :src => "/images/message.png"}/
+            / %li
+            /   %a{:href => "/"}
+            /   %img#new-tweet{:alt => "", :src => "/images/new_tweet.png"}/

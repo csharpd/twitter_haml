@@ -1,0 +1,102 @@
+!!!
+%html
+  %head
+    %title Makin'Twitter
+    %link{:href => "/images/favicon.ico", :rel => "icon", :type => "image/ico"}/
+    %link{:href => "css/reset.css", :rel => "stylesheet"}/
+    %link{:href => "/stylesheets/app.css", :rel => "stylesheet"}/
+  %body
+    %header
+      %section.wrap
+        %nav#left-nav
+          %a{:href => "/"}
+            %img{:alt => "", :src => "/images/home.png"}>/
+            Home
+          %a{:href => "/"}
+            %img{:alt => "", :src => "/images/notifications.png"}/
+            Notifications
+          %a{:href => "/"}
+            %img{:alt => "", :src => "/images/discover.png"}>/
+            Discover
+          %a{:href => "/"}
+            %img{:alt => "", :src => "/images/me.png"}/
+            Me
+          %img#logo{:alt => "", :src => "/images/logo.png"}/
+        %nav
+          %input.search{:placeholder => "Search Twitter", :type => "text"}/
+        %nav#right-nav
+          %a{:href => "/"}
+            %img{:alt => "", :src => "/images/message.png"}/
+          %a{:href => "/"}
+            %img{:alt => "", :src => "/images/settings.png"}/
+          %a{:href => "/"}
+            %img#new-tweet{:alt => "", :src => "/images/new_tweet.png"}/
+
+
+
+    %section.main
+      %aside
+        %section#profile
+          #coverimage
+          #profile_pic
+          %header
+            #profile_name
+              %h3 Chloe Donegan
+            #profile_handle
+              %p @ThisIsCsharpD
+          %ul#profile_statscontainer
+            %li.individual_stats_container
+              .stats_heading TWEETS
+              .stats_value 115
+            %li.individual_stats_container#middle_stats_container
+              .stats_heading FOLLOWING
+              .stats_value 224
+            %li.individual_stats_container
+              .stats_heading FOLLOWERS
+              .stats_value 138
+          #tweetbox
+            %input.tweet{:placeholder => "  Compose a new Tweet...", :type => "text"}/
+
+        %section#suggestions
+          %section.suggestionsheader Who to follow
+          %section.links
+            %a{:href => "#"} Refresh
+            %a{:href => "#"} View All
+          %article.user
+            %img{:alt => "", :src => "/images/zen.png"}/
+            %h2.title Daily zen
+            %p.handle @Dailyzen
+            %button.follow-button1
+          %article.user
+            %img{:alt => "", :src => "/images/buddism.png"}/
+            %h2.title Buddhist Geeks
+            %p.handle @BuddhistGeeks
+            %button.follow-button2
+
+        %section#trending
+          %h3.trendingheader
+            Trends
+            %a.link{:href => "#"} Change
+          %a.hashtags{:href => "#"} #Yoga
+          %a.hashtags{:href => "#"} #Coding
+          %a.hashtags{:href => "#"} #Adventure
+          %a.hashtags{:href => "#"} #TheGreatOutdoors
+          %a.hashtags{:href => "#"} #Design
+
+
+      #main.feed
+        %section.feed_title
+          %h3 Tweets
+        %section.feed_container
+          %article.tweet
+            %img{:alt => "", :src => "/images/matt.jpeg"}/
+            %h3 Matt Somebody
+            %p.handle ‏@Somedude   3 hrs
+            %p.content Today's date is xi.xii.xiii which is significant because it looks like a child doing star-jumps so well that a crowd starts to form.
+          %article.tweet
+            %img{:alt => "", :src => "/images/matt.jpeg"}/
+            %h3 Matt Somebody
+            %p.handle ‏@Somedude   3 hrs
+            %p.content #1: I already know I'm going to Hell. So, at this point, it's go big or go home.
+
+
