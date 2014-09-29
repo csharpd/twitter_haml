@@ -3,7 +3,7 @@ Twitter_frontend
 
 ## Objectives
 
-Re-create the twitter front end using CSS, SCSS, HTML5 and Javascript for the infinite scroll.
+Re-create the twitter front end using SCSS & HAML
 
 ## Technologies
 * SCSS
