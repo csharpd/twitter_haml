@@ -1,4 +1,4 @@
-Twitter_frontend
+Twitter_haml
 ================
 
 ## Objectives
