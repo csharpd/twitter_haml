@@ -22,5 +22,5 @@ rackup
 
 Open your browser and go to [localhost:9292](http://localhost:9292)
 
-## Improvments
+## Improvements
 + Make it responsive
